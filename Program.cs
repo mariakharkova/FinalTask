@@ -4,3 +4,17 @@
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
 string[] Array1 = new string[4] {"Hello", "2", "world", ":-)"};
+string[] Array2 = new string[Array1.Length];
+
+void NewArray(string[] Array1, string[] Array2)
+{
+    int count = 0;
+    for (int i = 0; i < Array1.Length; i++)
+    {
+    if(Array1[i].Length <= 3)
+        {
+        Array2[count] = Array1[i];
+        count++;
+        }
+    }
+}
